@@ -17,3 +17,12 @@
 /Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/obj/Debug/netcoreapp3.1/ApiJwt.dll
 /Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/obj/Debug/netcoreapp3.1/ApiJwt.pdb
 /Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/obj/Debug/netcoreapp3.1/ApiJwt.genruntimeconfig.cache
+/Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/danilo/projetos/torne-se/aulas/dotnet_core/ApiJwt/obj/Debug/netcoreapp3.1/ApiJwt.csproj.CopyComplete
