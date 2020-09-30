@@ -47,12 +47,12 @@ namespace ApiJwt.Controllers
 
         [HttpGet]
         [Route("/users")]
-        [Authorize("Administrador")]
+        [Authorize(Roles = "administrador")]
         public IList<User> Get() => UserRepository.All();
 
         [HttpGet]
         [Route("/users/one")]
-        [Authorize("Editor")]
+        [Authorize(Roles = "editor, administrador")]
         public User Editor() => UserRepository.All().First();
     }
 }

@@ -15,8 +15,8 @@ namespace ApiJwt.Repositories
     public static List<User> All()
     {
       var users = new List<User>();
-      users.Add(new User(){Id = 1, Username = "didox", Password = "123456", Role="Administrador"});
-      users.Add(new User(){Id = 2, Username = "bruno", Password = "123456", Role="Editor"});
+      users.Add(new User(){Id = 1, Username = "didox", Password = "123456", Role="administrador"});
+      users.Add(new User(){Id = 2, Username = "bruno", Password = "123456", Role="editor"});
       return users;
     }
   }

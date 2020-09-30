@@ -40,11 +40,11 @@ namespace ApiJwt
 
             services.AddMvc(config =>
             {
-                var policy = new AuthorizationPolicyBuilder()
-                                .RequireAuthenticatedUser()
-                                .Build();
-                config.Filters.Add(new AuthorizeFilter(policy));
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+               var policy = new AuthorizationPolicyBuilder()
+                               .RequireAuthenticatedUser()
+                               .Build();
+               config.Filters.Add(new AuthorizeFilter(policy));
+            });
 
             services.AddAuthentication(x =>
             {
@@ -65,8 +65,8 @@ namespace ApiJwt
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("Administrador", policy => policy.RequireClaim("ApiJwt", "Administrador"));
-                options.AddPolicy("Editor", policy => policy.RequireClaim("ApiJwt", "Editor"));
+               options.AddPolicy("administrador", policy => policy.RequireClaim("administrador"));
+               options.AddPolicy("editor", policy => policy.RequireClaim("editor"));
             });
         }
 
@@ -88,6 +88,7 @@ namespace ApiJwt
                 .AllowAnyHeader()
             );
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

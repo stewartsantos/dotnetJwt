@@ -21,22 +21,7 @@ namespace ApiJwt.Services
             if (user == null)
                 return null;
 
-            var tokenHandler = new JwtSecurityTokenHandler();
-            JToken jAppSettings = JToken.Parse(File.ReadAllText(Path.Combine(Environment.CurrentDirectory,"appsettings.json")));
-            var key = Encoding.ASCII.GetBytes(jAppSettings["Secret"].ToString());
-            
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                    new Claim(ClaimTypes.Name, user.Username),
-                    new Claim("ApiJwt", user.Role)
-                }),
-                Expires = DateTime.UtcNow.AddDays(7),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            user.Token = tokenHandler.WriteToken(token);
+            user.Token = TokenService.GenerateToken(user);
 
             user.Password = null;
 
