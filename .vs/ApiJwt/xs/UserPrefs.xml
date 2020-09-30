@@ -1,26 +1,18 @@
 ﻿<Properties StartupConfiguration="{DC1FB089-C212-4919-96B5-781267E4918E}|Default">
   <MonoDevelop.Ide.ItemProperties.ApiJwt PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/TokenService.cs">
-    <Files>
-      <File FileName="Controllers/HomeController.cs" Line="35" Column="40" />
-      <File FileName="Services/UserServices.cs" Line="31" Column="18" />
-      <File FileName="Repositories/UserRepository.cs" Line="18" Column="98" />
-      <File FileName="Services/TokenService.cs" Line="19" Column="31" />
-      <File FileName="Startup.cs" Line="69" Column="80" />
-      <File FileName="Models/User.cs" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ApiJwt" expanded="True">
             <Node name="ApiJwt" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repositories" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="TokenService.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
